@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: block;
+
+  & a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 16px;
+  }
+}

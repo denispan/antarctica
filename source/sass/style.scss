@@ -15,11 +15,19 @@
 @import "global/utils";
 @import "global/container";
 
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/modal";
+
+@import "blocks/main-nav";
+@import "blocks/features-card";
+@import "blocks/catalog-card";
+@import "blocks/section-title";
+@import "blocks/section-subtitle";
+@import "blocks/form-input";
 
 // ---------------------------------
 
