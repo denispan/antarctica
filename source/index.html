@@ -15,111 +15,179 @@
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="page__body">
-
-<ul class="main-nav">
-  <li class="main-nav__item">
-    <a href="#">
-      Преимущества
-    </a>
-  </li>
-  <li class="main-nav__item">
-    <a href="#">
-      Направления
-    </a>
-  </li>
-  <li class="main-nav__item">
-    <a href="#">
-      Ближайшие круизы
-    </a>
-  </li>
-  <li class="main-nav__item">
-    <a href="#">
-      Контакты
-    </a>
-  </li>
-</ul>
-<div class="container">
-
-  <h2 class="section-title">Путешествие на край Земли</h2>
-  <h3 class="section-subtitle">section-subtitle</h3>
-  <input type="text" CLASS="form-input" placeholder="kkk21">
-
-  <div class="features-card">
-    <picture>
-      <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-1.svg">
-      <img src="img/svg/features-icon-1.svg" alt="Иконка для лайнера.">
-    </picture>
-    <h3 class="section-subtitle">
-      Небольшой круизный лайнер
-    </h3>
-    <p>
-      Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
-      насладиться видами и природой.
-    </p>
-  </div>
-
-  <div class="catalog-card">
-    <div class="catalog-card__image-wrapper">
-      <picture>
-        <source type="image/webp" media="(min-width: 767px)"
-                srcset="./img/catalog/card-1-astoria-mob.webp 1x, ./img/catalog/card-1-astoria-mob@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 1365px)"
-                srcset="./img/catalog/card-1-astoria-tab.webp 1x, ./img/catalog/card-1-astoria-tab@2x.webp 2x">
-        <source type="image/webp"
-                srcset="./img/catalog/card-1-astoria-desk.webp 1x, ./img/catalog/card-1-astoria-desk@2x.webp 2x">
-        <source media="(min-width: 767px)"
-                srcset="./img/catalog/card-1-astoria-mob.jpg 1x, ./img/catalog/card-1-astoria-mob@2x.jpg 2x">
-        <source media="(min-width: 1365px)"
-                srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">
-        <img src="./img/catalog/card-1-astoria-desk.jpg"
-             srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x"
-             alt="Пейзаж из круиза “Астория”.">
-      </picture>
-    </div>
-    <h3 class="section-subtitle">
-      Круиз “Астория”
-    </h3>
-    <div class="catalog-card__description-wrapper">
-      <ul class="catalog-card__description">
-        <li class="catalog-card__description-item">
-          <h4>
-            Маршрут
-          </h4>
-          <p>
-            Аргентина - Фолклендские острова - Антарктида
-          </p>
-        </li>
-        <li class="catalog-card__description-item">
-          <h4>
-            Порт отправления
-          </h4>
-          <p>
-            Ушуайя
-          </p>
-        </li>
-        <li class="catalog-card__description-item">
-          <h4>
-            Продолжительность
-          </h4>
-          <p>
-            11 дней
-          </p>
-        </li>
-        <li class="catalog-card__description-item">
-          <h4 class="catalog-card__subtitle">
-            Цена
-          </h4>
-          <p>
-            от 11500 $
-          </p>
-        </li>
-      </ul>
-      <a class="catalog-card__btn btn" href="#">
-        Забронировать
+<div class="wrapper">
+  <header class="header header--no--js">
+    <div class="header__logo">
+      <a  href="index.html">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
+          <source media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg">
+          <img src="img/svg/logo_desktop.svg" alt="Логотип круизов в Антарктику.">
+        </picture>
       </a>
     </div>
-  </div>
+    <nav class="header__nav">
+      <ul class="main-nav main-nav--nojs">
+        <li class="main-nav__item">
+          <a href="#">
+            Преимущества
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Направления
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Ближайшие круизы
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__image-wrapper">
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/header-bg-mobile.webp 1x, ./img/header-bg-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1365px)"
+                srcset="./img/header-bg-tablet.webp 1x, ./img/header-bg-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/header-bg-desktop.webp 1x, ./img/header-bg-desktop@2x.webp 2x">
+        <source media="(max-width: 767px)" srcset="./img/header-bg-mobile.jpg 1x, ./img/header-bg-mobile@2x.jpg 2x">
+        <source media="(max-width: 1365px)" srcset="./img/header-bg-tablet.jpg 1x, ./img/header-bg-tablet@2x.jpg 2x">
+        <img src="./img/header-bg-desktop.jpg" srcset="./img/header-bg-desktop@2x.jpg 2x" alt="Антарктический пейзаж.">
+      </picture>
+    </div>
+    <button class="header__menu-toggle menu-toggle" type="button">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
+
+    </button>
+    <section class="header__title-wrapper">
+      <h1>Круизы в Антарктику</h1>
+      <p>Волшебный мир айсбергов и пингвинов</p>
+    </section>
+  </header>
+  <main class="page__main main">
+  </main>
+  <footer class="page__footer footer">
+  </footer>
 </div>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+
+<!--Повторяющиеся элементы-->
+
+<!--<ul class="main-nav">-->
+<!--  <li class="main-nav__item">-->
+<!--    <a href="#">-->
+<!--      Преимущества-->
+<!--    </a>-->
+<!--  </li>-->
+<!--  <li class="main-nav__item">-->
+<!--    <a href="#">-->
+<!--      Направления-->
+<!--    </a>-->
+<!--  </li>-->
+<!--  <li class="main-nav__item">-->
+<!--    <a href="#">-->
+<!--      Ближайшие круизы-->
+<!--    </a>-->
+<!--  </li>-->
+<!--  <li class="main-nav__item">-->
+<!--    <a href="#">-->
+<!--      Контакты-->
+<!--    </a>-->
+<!--  </li>-->
+<!--</ul>-->
+<!--<div class="container">-->
+
+<!--  <h2 class="section-title">Путешествие на край Земли</h2>-->
+<!--  <h3 class="section-subtitle">section-subtitle</h3>-->
+<!--  <input type="text" CLASS="form-input" placeholder="kkk21">-->
+
+<!--  <div class="features-card">-->
+<!--    <picture>-->
+<!--      <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-1.svg">-->
+<!--      <img src="img/svg/features-icon-1.svg" alt="Иконка для лайнера.">-->
+<!--    </picture>-->
+<!--    <h3 class="section-subtitle">-->
+<!--      Небольшой круизный лайнер-->
+<!--    </h3>-->
+<!--    <p>-->
+<!--      Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность-->
+<!--      насладиться видами и природой.-->
+<!--    </p>-->
+<!--  </div>-->
+
+<!--  <div class="catalog-card">-->
+<!--    <div class="catalog-card__image-wrapper">-->
+<!--      <picture>-->
+<!--        <source type="image/webp" media="(min-width: 767px)"-->
+<!--                srcset="./img/catalog/card-1-astoria-mob.webp 1x, ./img/catalog/card-1-astoria-mob@2x.webp 2x">-->
+<!--        <source type="image/webp" media="(min-width: 1365px)"-->
+<!--                srcset="./img/catalog/card-1-astoria-tab.webp 1x, ./img/catalog/card-1-astoria-tab@2x.webp 2x">-->
+<!--        <source type="image/webp"-->
+<!--                srcset="./img/catalog/card-1-astoria-desk.webp 1x, ./img/catalog/card-1-astoria-desk@2x.webp 2x">-->
+<!--        <source media="(min-width: 767px)"-->
+<!--                srcset="./img/catalog/card-1-astoria-mob.jpg 1x, ./img/catalog/card-1-astoria-mob@2x.jpg 2x">-->
+<!--        <source media="(min-width: 1365px)"-->
+<!--                srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">-->
+<!--        <img src="./img/catalog/card-1-astoria-desk.jpg"-->
+<!--             srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x"-->
+<!--             alt="Пейзаж из круиза “Астория”.">-->
+<!--      </picture>-->
+<!--    </div>-->
+<!--    <h3 class="section-subtitle">-->
+<!--      Круиз “Астория”-->
+<!--    </h3>-->
+<!--    <div class="catalog-card__description-wrapper">-->
+<!--      <ul class="catalog-card__description">-->
+<!--        <li class="catalog-card__description-item">-->
+<!--          <h4>-->
+<!--            Маршрут-->
+<!--          </h4>-->
+<!--          <p>-->
+<!--            Аргентина - Фолклендские острова - Антарктида-->
+<!--          </p>-->
+<!--        </li>-->
+<!--        <li class="catalog-card__description-item">-->
+<!--          <h4>-->
+<!--            Порт отправления-->
+<!--          </h4>-->
+<!--          <p>-->
+<!--            Ушуайя-->
+<!--          </p>-->
+<!--        </li>-->
+<!--        <li class="catalog-card__description-item">-->
+<!--          <h4>-->
+<!--            Продолжительность-->
+<!--          </h4>-->
+<!--          <p>-->
+<!--            11 дней-->
+<!--          </p>-->
+<!--        </li>-->
+<!--        <li class="catalog-card__description-item">-->
+<!--          <h4 class="catalog-card__subtitle">-->
+<!--            Цена-->
+<!--          </h4>-->
+<!--          <p>-->
+<!--            от 11500 $-->
+<!--          </p>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <a class="catalog-card__btn btn" href="#">-->
+<!--        Забронировать-->
+<!--      </a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--Семантика-->
 
 <!--<div class="wrapper">-->
 <!--  <header class="page__header header">-->
