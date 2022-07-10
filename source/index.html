@@ -18,7 +18,7 @@
 <div class="wrapper">
   <header class="header header--no--js">
     <div class="header__logo">
-      <a  href="index.html">
+      <a href="index.html">
         <picture>
           <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
           <source media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg">
@@ -72,64 +72,89 @@
     </section>
   </header>
   <main class="page__main main">
+    <section class="section promo container">
+      <div class="promo__wrapper">
+        <h2 class="section__title">Путешествие на край Земли</h2>
+        <p class="section__text">
+          Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер
+          отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских
+          котиков и многое другое.
+        </p>
+      </div>
+      <div class="promo__image">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/promo-mobile.webp 1x, ./img/promo-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="./img/promo-tablet.webp 1x, ./img/promo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg 1x, ./img/promo-mobile@2x.jpg 2x">
+          <source media="(max-width: 1365px)" srcset="./img/promo-tablet.jpg 1x, ./img/promo-tablet@2x.jpg 2x">
+          <img src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x"
+               alt="Фотография с пингвинами в Антарктике.">
+        </picture>
+      </div>
+
+    </section>
+
   </main>
   <footer class="footer container">
-      <div class=footer__logo">
-        <a  href="index.html">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
-            <source media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg">
-            <img src="img/svg/logo_desktop.svg" alt="Логотип круизов в Антарктику.">
-          </picture>
-        </a>
-      </div>
-      <nav class="footer__nav">
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a href="#">
-              Преимущества
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              Направления
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              Ближайшие круизы
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon" width="11" height="20" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#social-fb"></use>
-            </svg>
+    <div class=footer__logo">
+      <a href="index.html">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
+          <source media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg">
+          <img src="img/svg/logo_desktop.svg" alt="Логотип круизов в Антарктику.">
+        </picture>
+      </a>
+    </div>
+    <nav class="footer__nav">
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a href="#">
+            Преимущества
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#social-ig"></use>
-            </svg>
+        <li class="main-nav__item">
+          <a href="#">
+            Направления
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#social-tw"></use>
-            </svg>
+        <li class="main-nav__item">
+          <a href="#">
+            Ближайшие круизы
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Контакты
           </a>
         </li>
       </ul>
+    </nav>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg class="social-list__icon" width="11" height="20" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#social-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg class="social-list__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#social-ig"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg class="social-list__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#social-tw"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </footer>
 </div>
 
@@ -164,7 +189,7 @@
 
 <!--  <h2 class="section-title">Путешествие на край Земли</h2>-->
 <!--  <h3 class="section-subtitle">section-subtitle</h3>-->
-<!--  <input type="text" CLASS="form-input" placeholder="kkk21">-->
+<!--  <input type="text" class="form-input" placeholder="kkk21">-->
 
 <!--  <div class="features-card">-->
 <!--    <picture>-->
