@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/list-reset";
 
 
 // Blocks
@@ -21,7 +22,6 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
-
 @import "blocks/main-nav";
 @import "blocks/features-card";
 @import "blocks/catalog-card";
@@ -33,6 +33,8 @@
 @import "blocks/footer";
 @import "blocks/social-list";
 @import "blocks/promo";
+@import "blocks/features";
+@import "blocks/catalog";
 
 // ---------------------------------
 

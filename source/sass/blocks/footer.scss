@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-tangaroa;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   @include vp-767 {
     flex-direction: column;
@@ -13,8 +15,6 @@
 
 .footer__nav {
   margin-right: auto;
-
-
 
   & a {
     padding: 10px 10px;

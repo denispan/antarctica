@@ -2,21 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-width: 541px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 
   @include vp-1365 {
     min-width: 464px;
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     min-width: auto;
-    padding-top: 65px;
-    padding-bottom: 65px;
   }
 }
 
@@ -52,7 +46,7 @@
 .promo__image {
   margin-left: auto;
 
-    @include vp-767 {
-      margin: 0 auto;
-    }
+  @include vp-767 {
+    margin: 0 auto;
+  }
 }

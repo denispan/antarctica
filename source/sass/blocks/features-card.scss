@@ -1,6 +1,7 @@
 .features-card {
   padding: 30px 42px 50px 30px;
   margin: 0;
+  background-color: $color-alice-blue;
 
   & img {
     margin-bottom: 18px;
@@ -11,11 +12,10 @@
   }
 
   & p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-tangaroa;
-  margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-tangaroa;
+    margin: 0;
   }
 }
-
