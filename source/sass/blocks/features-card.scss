@@ -1,5 +1,5 @@
 .features-card {
-  padding: 30px 42px 50px 30px;
+  padding: 30px 20px 23px 30px;
   margin: 0;
   background-color: $color-alice-blue;
 
@@ -8,6 +8,7 @@
   }
 
   & h3 {
+    line-height: 25px;
     margin-bottom: 13px;
   }
 
@@ -17,5 +18,10 @@
     line-height: 20px;
     color: $color-tangaroa;
     margin: 0;
+
   }
+}
+
+.features-card__icon {
+  min-height: 50px;
 }

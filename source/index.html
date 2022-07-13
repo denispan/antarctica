@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="page__body">
+<body>
 <div class="wrapper">
   <header class="header header--no--js">
     <div class="header__logo">
@@ -29,22 +29,22 @@
     <nav class="header__nav">
       <ul class="main-nav main-nav--nojs">
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#features">
             Преимущества
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#promo">
             Направления
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#catalog">
             Ближайшие круизы
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#contacts">
             Контакты
           </a>
         </li>
@@ -64,7 +64,6 @@
     </div>
     <button class="header__menu-toggle menu-toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
-
     </button>
     <section class="header__title-wrapper">
       <h1>Круизы в Антарктику</h1>
@@ -72,7 +71,7 @@
     </section>
   </header>
   <main class="page__main main">
-    <section class="promo container">
+    <section class="section promo container" id="promo">
       <div class="promo__wrapper">
         <h2 class="section-title">
           Путешествие на край Земли
@@ -93,13 +92,12 @@
           <source type="image/webp" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg 1x, ./img/promo-mobile@2x.jpg 2x">
           <source media="(max-width: 1365px)" srcset="./img/promo-tablet.jpg 1x, ./img/promo-tablet@2x.jpg 2x">
-          <img src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x"
-               alt="Фотография с пингвинами в Антарктике.">
+          <img src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x" alt="Фотография с пингвинами в Антарктике.">
         </picture>
       </div>
 
     </section>
-    <section class="features container">
+    <section class="section features container" id="features">
       <h2 class="section-title">
         Преимущества
       </h2>
@@ -131,7 +129,7 @@
             Система все включено
           </h3>
           <p>
-            Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас
+            Все наши круизы работают по&nbsp;системе&nbsp;“Все Включено”. Великолепные блюда и безлимитный бар&nbsp;доступны для вас
             24 часа.
           </p>
         </li>
@@ -143,16 +141,16 @@
             </picture>
           </div>
           <h3 class="section-subtitle">
-            Экскурсионные туры на Zodiac
+            Экскурсионные туры на&nbsp;Zodiac
           </h3>
           <p>
-            Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
-            опытных экскурсоводов.
+            Экскурсионные туры к берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа <br> Zodiac в сопровождении
+            опытных&nbsp;экскурсоводов.
           </p>
         </li>
       </ul>
     </section>
-    <section class="catalog container">
+    <section class="catalog container" id="catalog">
       <h2 class="section-title">
         Ближайшие круизы
       </h2>
@@ -170,9 +168,7 @@
                       srcset="./img/catalog/card-1-astoria-mob.jpg 1x, ./img/catalog/card-1-astoria-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-1-astoria-desk.jpg"
-                   srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Астория”.">
+              <img src="./img/catalog/card-1-astoria-desk.jpg" srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x" alt="Пейзаж из круиза “Астория”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -231,9 +227,7 @@
                       srcset="./img/catalog/card-1-astoria-mob.jpg 1x, ./img/catalog/card-1-astoria-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-1-astoria-desk.jpg"
-                   srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Элайн”.">
+              <img src="./img/catalog/card-1-astoria-desk.jpg" srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x" alt="Пейзаж из круиза “Элайн”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -292,9 +286,7 @@
                       srcset="./img/catalog/card-3-atlantis-mob.jpg 1x, ./img/catalog/card-3-atlantis-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-3-atlantis-tab.jpg 1x, ./img/catalog/card-3-atlantis-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-3-atlantis-desk.jpg"
-                   srcset="./img/catalog/card-3-atlantis-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Атлантис”.">
+              <img src="./img/catalog/card-3-atlantis-desk.jpg" srcset="./img/catalog/card-3-atlantis-desk@2x.jpg 2x" alt="Пейзаж из круиза “Атлантис”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -353,9 +345,7 @@
                       srcset="./img/catalog/card-4-odissey-mob.jpg 1x, ./img/catalog/card-4-odissey-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-4-odissey-tab.jpg 1x, ./img/catalog/card-4-odissey-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-4-odissey-desk.jpg"
-                   srcset="./img/catalog/card-4-odissey-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Одиссей”.">
+              <img src="./img/catalog/card-4-odissey-desk.jpg" srcset="./img/catalog/card-4-odissey-desk@2x.jpg 2x" alt="Пейзаж из круиза “Одиссей”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -414,9 +404,7 @@
                       srcset="./img/catalog/card-5-olimpia-mob.jpg 1x, ./img/catalog/card-5-olimpia-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-5-olimpia-tab.jpg 1x, ./img/catalog/card-5-olimpia-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-5-olimpia-desk.jpg"
-                   srcset="./img/catalog/card-5-olimpia-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Олимпия”.">
+              <img src="./img/catalog/card-5-olimpia-desk.jpg" srcset="./img/catalog/card-5-olimpia-desk@2x.jpg 2x" alt="Пейзаж из круиза “Олимпия”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -475,9 +463,7 @@
                       srcset="./img/catalog/card-6-aurora-mob.jpg 1x, ./img/catalog/card-6-aurora-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-6-aurora-tab.jpg 1x, ./img/catalog/card-6-aurora-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-6-aurora-desk.jpg"
-                   srcset="./img/catalog/card-6-aurora-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Аврора”.">
+              <img src="./img/catalog/card-6-aurora-desk.jpg" srcset="./img/catalog/card-6-aurora-desk@2x.jpg 2x" alt="Пейзаж из круиза “Аврора”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -536,9 +522,7 @@
                       srcset="./img/catalog/card-7-leonor-mob.jpg 1x, ./img/catalog/card-7-leonor-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-7-leonor-tab.jpg 1x, ./img/catalog/card-7-leonor-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-7-leonor-desk.jpg"
-                   srcset="./img/catalog/card-7-leonor-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Леонор”.">
+              <img src="./img/catalog/card-7-leonor-desk.jpg" srcset="./img/catalog/card-7-leonor-desk@2x.jpg 2x" alt="Пейзаж из круиза “Леонор”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -597,9 +581,7 @@
                       srcset="./img/catalog/card-8-minion-mob.jpg 1x, ./img/catalog/card-8-minion-mob@2x.jpg 2x">
               <source media="(min-width: 1365px)"
                       srcset="./img/catalog/card-8-minion-tab.jpg 1x, ./img/catalog/card-8-minion-tab@2x.jpg 2x">
-              <img src="./img/catalog/card-8-minion-desk.jpg"
-                   srcset="./img/catalog/card-8-minion-desk@2x.jpg 2x"
-                   alt="Пейзаж из круиза “Минион - 1”.">
+              <img src="./img/catalog/card-8-minion-desk.jpg" srcset="./img/catalog/card-8-minion-desk@2x.jpg 2x" alt="Пейзаж из круиза “Минион - 1”.">
             </picture>
           </div>
           <h3 class="section-subtitle">
@@ -647,7 +629,68 @@
         </li>
       </ul>
     </section>
+    <section class="booking container">
+      <div class="booking__description">
+        <h2 class="section-title">Раннее бронирование</h2>
+        <p>
+          Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%
+        </p>
+      </div>
+      <form class="booking-form" action="get">
+        <p>
+          Оставьте заявку и мы свяжемся с вами в ближайшее время
+        </p>
+        <label class="visually-hidden" for="name">Введите Ваше имя</label>
+        <input type="text" id="name" name="tourist-name" placeholder="Имя" required>
+        <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+        <input type="tel" id="phone" name="tourist-phone" placeholder="Телефон" required>
+        <label class="visually-hidden" for="email">Введите Вашу электронную почту</label>
+        <input type="email" id="email" name="tourist-email" placeholder="Email" required>
 
+        <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>
+        <label for="agreement">
+          Я согласен на обработку моих персональных данных
+        </label>
+
+        <button class="booking-form__button btn" type="submit">Оставить заявку</button>
+      </form>
+
+    </section>
+    <section class="section contacts container" id="contacts">
+      <h2 class="visually-hidden">
+        Контакты
+      </h2>
+      <div class="contacts__map-container contacts__map-container--nojs">
+        <div class="map-canvas" id="map">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14ov4wOaomxEIEa0ZiPUgijk_PPGFwvc&ehbc=2E312F" width="560" height="306"></iframe>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="./img/map-nojs-desktop.webp 1x, ./img/map-nojs-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/map-nojs-tablet.webp 1x, ./img/map-nojs-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/map-nojs-mobile.webp 1x, ./img/map-nojs-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px)"
+                  srcset="./img/map-nojs-desktop.jpg 1x, ./img/map-nojs-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-nojs-tablet.jpg 1x, ./img/map-nojs-tablet@2x.jpg 2x">
+          <img src="./img/map-nojs-mobile.jpg" srcset="./img/map-nojs-mobile@2x.jpg 2x" alt="Как нас найти.">
+        </picture>
+      </div>
+      <div class="contacts__wrapper">
+        <p class="contacts__caption">
+          У вас ещё остались вопросы или сомнения?
+          Приезжайте к нам в офис и мы вам все расскажем.
+        </p>
+        <p class="contacts__text contacts__text--address">
+          г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+        </p>
+        <p class="contacts__text contacts__text--phone">
+          <a href="tel:88002000000">
+            8-800-200-00-00
+          </a>
+        </p>
+      </div>
+    </section>
   </main>
   <footer class="footer container">
     <div class="footer__logo">
@@ -662,22 +705,22 @@
     <nav class="footer__nav">
       <ul class="main-nav">
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#features">
             Преимущества
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#promo">
             Направления
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#catalog">
             Ближайшие круизы
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a href="#contacts">
             Контакты
           </a>
         </li>
@@ -711,458 +754,10 @@
 
 <script src="js/vendor.min.js"></script>
 <script src="js/main.min.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer
+></script>
 
-<!--Повторяющиеся элементы-->
-
-<!--<ul class="main-nav">-->
-<!--  <li class="main-nav__item">-->
-<!--    <a href="#">-->
-<!--      Преимущества-->
-<!--    </a>-->
-<!--  </li>-->
-<!--  <li class="main-nav__item">-->
-<!--    <a href="#">-->
-<!--      Направления-->
-<!--    </a>-->
-<!--  </li>-->
-<!--  <li class="main-nav__item">-->
-<!--    <a href="#">-->
-<!--      Ближайшие круизы-->
-<!--    </a>-->
-<!--  </li>-->
-<!--  <li class="main-nav__item">-->
-<!--    <a href="#">-->
-<!--      Контакты-->
-<!--    </a>-->
-<!--  </li>-->
-<!--</ul>-->
-<!--<div class="container">-->
-
-<!--  <h2 class="section-title">Путешествие на край Земли</h2>-->
-<!--  <h3 class="section-subtitle">section-subtitle</h3>-->
-<!--  <input type="text" class="form-input" placeholder="kkk21">-->
-
-<!--  <div class="features-card">-->
-<!--    <picture>-->
-<!--      <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-1.svg">-->
-<!--      <img src="img/svg/features-icon-1.svg" alt="Иконка для лайнера.">-->
-<!--    </picture>-->
-<!--    <h3 class="section-subtitle">-->
-<!--      Небольшой круизный лайнер-->
-<!--    </h3>-->
-<!--    <p>-->
-<!--      Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность-->
-<!--      насладиться видами и природой.-->
-<!--    </p>-->
-<!--  </div>-->
-
-<!--  <div class="catalog-card">-->
-<!--    <div class="catalog-card__image-wrapper">-->
-<!--      <picture>-->
-<!--        <source type="image/webp" media="(min-width: 767px)"-->
-<!--                srcset="./img/catalog/card-1-astoria-mob.webp 1x, ./img/catalog/card-1-astoria-mob@2x.webp 2x">-->
-<!--        <source type="image/webp" media="(min-width: 1365px)"-->
-<!--                srcset="./img/catalog/card-1-astoria-tab.webp 1x, ./img/catalog/card-1-astoria-tab@2x.webp 2x">-->
-<!--        <source type="image/webp"-->
-<!--                srcset="./img/catalog/card-1-astoria-desk.webp 1x, ./img/catalog/card-1-astoria-desk@2x.webp 2x">-->
-<!--        <source media="(min-width: 767px)"-->
-<!--                srcset="./img/catalog/card-1-astoria-mob.jpg 1x, ./img/catalog/card-1-astoria-mob@2x.jpg 2x">-->
-<!--        <source media="(min-width: 1365px)"-->
-<!--                srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">-->
-<!--        <img src="./img/catalog/card-1-astoria-desk.jpg"-->
-<!--             srcset="./img/catalog/card-1-astoria-desk@2x.jpg 2x"-->
-<!--             alt="Пейзаж из круиза “Астория”.">-->
-<!--      </picture>-->
-<!--    </div>-->
-<!--    <h3 class="section-subtitle">-->
-<!--      Круиз “Астория”-->
-<!--    </h3>-->
-<!--    <div class="catalog-card__description-wrapper">-->
-<!--      <ul class="catalog-card__description">-->
-<!--        <li class="catalog-card__description-item">-->
-<!--          <h4>-->
-<!--            Маршрут-->
-<!--          </h4>-->
-<!--          <p>-->
-<!--            Аргентина - Фолклендские острова - Антарктида-->
-<!--          </p>-->
-<!--        </li>-->
-<!--        <li class="catalog-card__description-item">-->
-<!--          <h4>-->
-<!--            Порт отправления-->
-<!--          </h4>-->
-<!--          <p>-->
-<!--            Ушуайя-->
-<!--          </p>-->
-<!--        </li>-->
-<!--        <li class="catalog-card__description-item">-->
-<!--          <h4>-->
-<!--            Продолжительность-->
-<!--          </h4>-->
-<!--          <p>-->
-<!--            11 дней-->
-<!--          </p>-->
-<!--        </li>-->
-<!--        <li class="catalog-card__description-item">-->
-<!--          <h4 class="catalog-card__subtitle">-->
-<!--            Цена-->
-<!--          </h4>-->
-<!--          <p>-->
-<!--            от 11500 $-->
-<!--          </p>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--      <a class="catalog-card__btn btn" href="#">-->
-<!--        Забронировать-->
-<!--      </a>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--Семантика-->
-
-<!--<div class="wrapper">-->
-<!--  <header class="page__header header">-->
-<!--    <div class="container">-->
-<!--      <picture class="header__image">-->
-<!--        <source type="image/webp" media="(min-width: 1366px)"-->
-<!--                srcset="./img/header-bg-desktop.webp 1x, ./img/header-bg-desktop@2x.webp 2x">-->
-<!--        <source type="image/webp" media="(min-width: 768px)"-->
-<!--                srcset="./img/header-bg-tablet.webp 1x, ./img/header-bg-tablet@2x.webp 2x">-->
-<!--        <source type="image/webp" srcset="./img/header-bg-mobile.webp 1x, ./img/header-bg-mobile@2x.webp 2x">-->
-<!--        <source media="(min-width: 1366px)" srcset="./img/header-bg-desktop.jpg 1x, ./img/header-bg-desktop@2x.jpg 2x">-->
-<!--        <source media="(min-width: 768px)" srcset="./img/header-bg-tablet.jpg 1x, ./img/header-bg-tablet@2x.jpg 2x">-->
-<!--        <img src="./img/header-bg-mobile.jpg" srcset="./img/header-bg-mobile@2x.jpg 2x" alt="Антарктический пейзаж.">-->
-<!--      </picture>-->
-<!--      <a class="header__logo" href="index.html">-->
-<!--        <picture>-->
-<!--          <source media="(min-width: 1366px)" srcset="img/svg/logo_desktop.svg">-->
-<!--          <source media="(min-width: 768px)" srcset="img/svg/logo_tablet.svg">-->
-<!--          <img src="img/svg/logo_mobile.svg" alt="Логотип круизов в Антарктику.">-->
-<!--        </picture>-->
-<!--      </a>-->
-<!--      <nav class="main-nav header__nav">-->
-<!--        <ul class="main-nav__list">-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Преимущества-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Направления-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Ближайшие круизы-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Контакты-->
-<!--            </a>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </nav>-->
-<!--      <h1 class="header__title title">Круизы в Антарктику</h1>-->
-<!--      <p class="header__text">Волшебный мир айсбергов и пингвинов</p>-->
-<!--    </div>-->
-<!--  </header>-->
-<!--  <main class="page__main main">-->
-<!--    <section class="section promo">-->
-<!--      <div class="container">-->
-<!--        <h2 class="section__title">Путешествие на край Земли</h2>-->
-<!--        <p class="section__text">-->
-<!--          Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер-->
-<!--          отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских-->
-<!--          котиков и многое другое.-->
-<!--        </p>-->
-<!--        <picture class="promo__image">-->
-<!--          <source type="image/webp" media="(min-width: 1366px)"-->
-<!--                  srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">-->
-<!--          <source type="image/webp" media="(min-width: 768px)"-->
-<!--                  srcset="./img/promo-tablet.webp 1x, ./img/promo-tablet@2x.webp 2x">-->
-<!--          <source type="image/webp" srcset="./img/promo-mobile.webp 1x, ./img/promo-mobile@2x.webp 2x">-->
-<!--          <source media="(min-width: 1366px)" srcset="./img/promo-desktop.jpg 1x, ./img/promo-desktop@2x.jpg 2x">-->
-<!--          <source media="(min-width: 768px)" srcset="./img/promo-tablet.jpg 1x, ./img/promo-tablet@2x.jpg 2x">-->
-<!--          <img src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x"-->
-<!--               alt="Фотография с пингвинами в Антарктике.">-->
-<!--        </picture>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="section features">-->
-<!--      <div class="container">-->
-<!--        <h2 class="section__title">-->
-<!--          Преимущества-->
-<!--        </h2>-->
-<!--        <ul class="features__list">-->
-<!--          <li class="features__item features-card">-->
-<!--            <h3 class="features-card__title features-card__title&#45;&#45;card1">-->
-<!--              Небольшой круизный лайнер-->
-<!--            </h3>-->
-<!--            <p class="features-card__text">-->
-<!--              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность-->
-<!--              насладиться видами и природой.-->
-<!--            </p>-->
-<!--          </li>-->
-<!--          <li class="features__item features-card">-->
-<!--            <h3 class="features-card__title">-->
-<!--              Система все включено-->
-<!--            </h3>-->
-<!--            <p class="features-card__text">-->
-<!--              Все наши круизы работают-->
-<!--              по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.-->
-<!--            </p>-->
-<!--          </li>-->
-<!--          <li class="features__item features-card">-->
-<!--            <h3 class="features-card__title">-->
-<!--              Экскурсионные туры на Zodiac-->
-<!--            </h3>-->
-<!--            <p class="features-card__text">-->
-<!--              Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении-->
-<!--              опытных экскурсоводов.-->
-<!--            </p>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="section catalog">-->
-<!--      <div class="container">-->
-<!--        <h2 class="section__title">-->
-<!--          Ближайшие круизы-->
-<!--        </h2>-->
-<!--        <ul>-->
-<!--          <li class="card">-->
-<!--            <div class="card__image-wrapper">-->
-<!--              <picture>-->
-<!--                <source type="image/webp" media="(min-width: 1366px)"-->
-<!--                        srcset="./img/catalog/card-1-astoria-desk.webp 1x, ./img/catalog/card-1-astoria-desk@2x.webp 2x">-->
-<!--                <source type="image/webp" media="(min-width: 768px)"-->
-<!--                        srcset="./img/catalog/card-1-astoria-tab.webp 1x, ./img/catalog/card-1-astoria-tab@2x.webp 2x">-->
-<!--                <source type="image/webp"-->
-<!--                        srcset="./img/catalog/card-1-astoria-mob.webp 1x, ./img/catalog/card-1-astoria-mob@2x.webp 2x">-->
-<!--                <source media="(min-width: 1366px)"-->
-<!--                        srcset="./img/catalog/card-1-astoria-desk.jpg 1x, ./img/catalog/card-1-astoria-desk@2x.jpg 2x">-->
-<!--                <source media="(min-width: 768px)"-->
-<!--                        srcset="./img/catalog/card-1-astoria-tab.jpg 1x, ./img/catalog/card-1-astoria-tab@2x.jpg 2x">-->
-<!--                <img class="card__image" src="./img/catalog/card-1-astoria-mob.jpg" srcset="./img/catalog/card-1-astoria-mob@2x.jpg 2x"-->
-<!--                     alt="Пейзаж из круиза “Астория”.">-->
-<!--              </picture>-->
-<!--            </div>-->
-<!--            <h3 class="card__title">-->
-<!--              Круиз “Астория”-->
-<!--            </h3>-->
-<!--            <div class="card__description-wrapper">-->
-<!--              <ul class="card__description">-->
-<!--                <li class="card__description-item">-->
-<!--                  <h4 class="card__subtitle">-->
-<!--                    Маршрут-->
-<!--                  </h4>-->
-<!--                  <p class="card__text">-->
-<!--                    Аргентина - Фолклендские острова - Антарктида-->
-<!--                  </p>-->
-<!--                </li>-->
-<!--                <li class="card__description-item">-->
-<!--                  <h4 class="card__subtitle">-->
-<!--                    Порт отправления-->
-<!--                  </h4>-->
-<!--                  <p class="card__text">-->
-<!--                    Ушуайя-->
-<!--                  </p>-->
-<!--                </li>-->
-<!--                <li class="card__description-item">-->
-<!--                  <h4 class="card__subtitle">-->
-<!--                    Продолжительность-->
-<!--                  </h4>-->
-<!--                  <p class="card__text">-->
-<!--                    11 дней-->
-<!--                  </p>-->
-<!--                </li>-->
-<!--                <li class="card__description-item">-->
-<!--                  <h4 class="card__subtitle">-->
-<!--                    Цена-->
-<!--                  </h4>-->
-<!--                  <p class="card__text">-->
-<!--                    от 11500 $-->
-<!--                  </p>-->
-<!--                </li>-->
-<!--              </ul>-->
-<!--              <a class="card__link btn" href="#">-->
-<!--                Забронировать-->
-<!--              </a>-->
-<!--            </div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="section booking">-->
-<!--      <div class="container">-->
-<!--        <h2 class="section__title section__title&#45;&#45;booking">Раннее бронирование</h2>-->
-<!--        <p class="section__text">-->
-<!--          Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%-->
-<!--        </p>-->
-<!--        <form class="booking__form form" action="get">-->
-<!--          <p class="form__text">-->
-<!--            Оставьте заявку и мы свяжемся с вами в ближайшее время-->
-<!--          </p>-->
-<!--          <label class="visually-hidden" for="name">Введите Ваше имя</label>-->
-<!--          <input class="form__input" type="text" id="name" name="tourist-name" required>-->
-<!--          <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>-->
-<!--          <input class="form__input" type="tel" id="phone" name="tourist-phone" required>-->
-<!--          <label class="visually-hidden" for="email">Введите Вашу электронную почту</label>-->
-<!--          <input class="form__input" type="email" id="email" name="tourist-email" required>-->
-
-<!--          <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>-->
-<!--          <label class="form__checkbox" for="agreement">Я согласен на обработку моих персональных данных</label>-->
-<!--          <button class="form__button" type="submit">Оставить заявку</button>-->
-<!--        </form>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="section contacts">-->
-<!--      <div class="container">-->
-<!--        <h2 class="visually-hidden">-->
-<!--          Контакты-->
-<!--        </h2>-->
-<!--        <picture class="contacts__map-nojs">-->
-<!--          <source type="image/webp" media="(min-width: 1366px)"-->
-<!--                  srcset="./img/header-bg-desktop.webp 1x, ./img/header-bg-desktop@2x.webp 2x">-->
-<!--          <source type="image/webp" media="(min-width: 768px)"-->
-<!--                  srcset="./img/header-bg-tablet.webp 1x, ./img/header-bg-tablet@2x.webp 2x">-->
-<!--          <source type="image/webp" srcset="./img/header-bg-mobile.webp 1x, ./img/header-bg-mobile@2x.webp 2x">-->
-<!--          <source media="(min-width: 1366px)" srcset="./img/header-bg-desktop.jpg 1x, ./img/header-bg-desktop@2x.jpg 2x">-->
-<!--          <source media="(min-width: 768px)" srcset="./img/header-bg-tablet.jpg 1x, ./img/header-bg-tablet@2x.jpg 2x">-->
-<!--          <img src="./img/header-bg-mobile.jpg" srcset="./img/header-bg-mobile@2x.jpg 2x" alt="Антарктический пейзаж.">-->
-<!--        </picture>-->
-<!--        <div class="map-container"></div>-->
-<!--        <div class="contacts__wrapper">-->
-<!--          <p class="contacts__caption">-->
-<!--            У вас ещё остались вопросы или сомнения?-->
-<!--            Приезжайте к нам в офис и мы вам все расскажем.-->
-<!--          </p>-->
-<!--          <p class="contacts__address">-->
-<!--            г. Санкт Петербург, ул. Большая Конюшенная, 19/8-->
-<!--          </p>-->
-<!--          <p class="contacts__phone">-->
-<!--            <a href="tel:88002000000">-->
-<!--              8-800-200-00-00-->
-<!--            </a>-->
-<!--          </p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--  </main>-->
-<!--  <footer class="page__footer footer">-->
-<!--    <div class="container">-->
-<!--      <a class="footer__logo" href="index.html">-->
-<!--        <picture>-->
-<!--          <source media="(min-width: 1366px)" srcset="img/svg/logo_desktop.svg">-->
-<!--          <source media="(min-width: 768px)" srcset="img/svg/logo_tablet.svg">-->
-<!--          <img src="img/svg/logo_mobile.svg" alt="Логотип круизов в Антарктику.">-->
-<!--        </picture>-->
-<!--      </a>-->
-<!--      <nav class="main-nav footer__nav">-->
-<!--        <ul class="main-nav__list">-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Преимущества-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Направления-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Ближайшие круизы-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="main-nav__item">-->
-<!--            <a class="main-nav__link" href="#">-->
-<!--              Контакты-->
-<!--            </a>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </nav>-->
-<!--      <ul class="social-list">-->
-<!--        <li class="social-list__item">-->
-<!--          <a class="social-list__link" href="#">-->
-<!--            <svg class="social-list__icon" width="11" height="20" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <use xlink:href="img/sprite_auto.svg#social-fb"></use>-->
-<!--            </svg>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--        <li class="social-list__item">-->
-<!--          <a class="social-list__link" href="#">-->
-<!--            <svg class="social-list__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <use xlink:href="img/sprite_auto.svg#social-ig"></use>-->
-<!--            </svg>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--        <li class="social-list__item">-->
-<!--          <a class="social-list__link" href="#">-->
-<!--            <svg class="social-list__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <use xlink:href="img/sprite_auto.svg#social-tw"></use>-->
-<!--            </svg>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </footer>-->
-<!--</div>-->
-
-
-<!--    <div class="wrapper">-->
-<!--      <header>-->
-<!--        <div class="container"></div>-->
-<!--      </header>-->
-<!--      <main>-->
-<!--        <section class="intro">-->
-<!--          <div class="container">-->
-<!--            <h1>Тестовая страница.</h1>-->
-<!--            <p>На данной странице показан пример модальных окон.</p>-->
-<!--            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>-->
-<!--            <p><a class="btn" href="#" data-open-modal="feedback">modal&#45;&#45;feedback link</a></p>-->
-<!--            <p><a class="btn" href="#" data-open-modal="success">modal&#45;&#45;success link</a></p>-->
-<!--          </div>-->
-<!--        </section>-->
-<!--      </main>-->
-<!--      <footer>-->
-<!--        <div class="container"></div>-->
-<!--      </footer>-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash; Модалки &ndash;&gt;-->
-<!--    <div class="modal modal&#45;&#45;preload" data-modal="feedback">-->
-<!--      <div class="modal__wrapper">-->
-<!--        <div class="modal__overlay" data-close-modal></div>-->
-<!--        <div class="modal__content">-->
-<!--          <p class="modal__description">Обычная модалка</p>-->
-<!--          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--            <svg width="15" height="15">-->
-<!--              <use xlink:href="img/sprite_auto.svg#icon-close"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="modal modal&#45;&#45;preload modal&#45;&#45;fit-content modal&#45;&#45;no-scale" data-modal="success">-->
-<!--      <div class="modal__wrapper">-->
-<!--        <div class="modal__overlay" data-close-modal></div>-->
-<!--        <div class="modal__content">-->
-<!--          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>-->
-<!--          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--            <svg width="15" height="15">-->
-<!--              <use xlink:href="img/sprite_auto.svg#icon-close"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <script src="js/vendor.min.js"></script>-->
-<!--    <script src="js/main.min.js"></script>-->
 </body>
 </html>

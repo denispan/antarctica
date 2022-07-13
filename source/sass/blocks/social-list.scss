@@ -1,7 +1,8 @@
 .social-list {
   display: flex;
+  max-width: 300px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -12,10 +13,9 @@
 }
 
 .social-list__item {
-  margin-right: 28px;
-  text-align: center;
+  margin: auto 0;
 
-  @include vp-1365 {
-    margin-right: 23px;
+  & a {
+    display: inline-block;
   }
 }

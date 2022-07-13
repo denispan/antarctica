@@ -1,3 +1,12 @@
+.catalog {
+  padding-top: 110px;
+  padding-bottom: 119px;
+
+  & h2 {
+    margin-bottom: 50px;
+  }
+}
+
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

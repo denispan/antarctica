@@ -7,12 +7,14 @@
   & h3 {
     grid-area: card-area;
     color: $color-alice-blue;
-    margin: auto 30px 20px;
+    margin: auto 30px 22px;
     padding: 0;
     z-index: 1;
   }
 
   &:hover {
+    display: flex;
+    flex-direction: column;
     background-color: $color-tangaroa;
 
     & .catalog-card__image-wrapper {
@@ -20,7 +22,7 @@
     }
 
     & h3 {
-      margin: 20px 25px 25px;
+      margin: 28px 25px 13px;
     }
 
     & .catalog-card__description-wrapper {
@@ -52,7 +54,7 @@
 }
 
 .catalog-card__description {
-  margin: 0;
+  margin: 0 0 14px;
   padding: 0;
   list-style: none;
 }
@@ -61,7 +63,7 @@
   margin-bottom: 10px;
 
   & h4 {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;

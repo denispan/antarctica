@@ -20,6 +20,9 @@
   }
 
   & h2 {
+    margin: 56px 10px 25px 0;
+    text-align: start;
+
     @include vp-1365 {
       max-width: 205px;
     }
