@@ -80,6 +80,7 @@
 
 .catalog-card__description-wrapper {
   display: none;
+  height: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 0 25px;
@@ -89,12 +90,8 @@
   margin: 0 0 14px;
   padding: 0;
   list-style: none;
-}
 
-.catalog-card__description-item {
-  margin-bottom: 10px;
-
-  & h4 {
+  & dt {
     margin: 0 0 2px;
     font-weight: 500;
     font-size: 14px;
@@ -102,11 +99,16 @@
     color: $color-alice-blue;
   }
 
-  & p {
-    margin: 0;
+  & dd {
+    margin: 0 0 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: $color-alice-blue;
   }
+}
+
+.catalog-card__btn {
+  margin-top: auto;
+  margin-bottom: 35px;
 }
