@@ -14,12 +14,33 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/list-reset";
+
 
 // Blocks
 // ---------------------------------
 
+@import "blocks/page";
 @import "blocks/btn";
+@import "blocks/section-title";
 @import "blocks/modal";
+@import "blocks/main-nav";
+@import "blocks/features-card";
+@import "blocks/catalog-card";
+@import "blocks/section";
+@import "blocks/section-subtitle";
+@import "blocks/form-input";
+@import "blocks/header";
+@import "blocks/menu-toggle";
+@import "blocks/footer";
+@import "blocks/social-list";
+@import "blocks/promo";
+@import "blocks/features";
+@import "blocks/catalog";
+@import "blocks/booking";
+@import "blocks/booking-form";
+@import "blocks/contacts";
+@import "blocks/map-canvas";
 
 // ---------------------------------
 
