@@ -1,8 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {menuOpen} from './modules/menu-open';
-import {initialMap} from './modules/map';
-import {scrollSmooth} from './modules/scroll-smooth';
+import {initialMap, menuOpen, scrollSmooth} from './vendor';
 
 // ---------------------------------
 
