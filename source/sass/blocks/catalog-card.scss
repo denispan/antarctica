@@ -83,7 +83,7 @@
   height: 100%;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 25px;
+  padding: 0 25px 10px;
 }
 
 .catalog-card__description {
@@ -108,7 +108,3 @@
   }
 }
 
-.catalog-card__btn {
-  margin-top: auto;
-  margin-bottom: 35px;
-}
