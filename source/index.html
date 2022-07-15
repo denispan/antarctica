@@ -106,14 +106,14 @@
           <div class="features-card__icon">
             <picture>
               <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-1.svg">
-              <img src="img/svg/features-icon-1.svg" alt="Иконка для лайнера.">
+              <img src="img/svg/features-icon-1.svg" width="27" height="32" alt="Иконка для лайнера.">
             </picture>
           </div>
           <h3 class="section-subtitle">
             Небольшой круизный&nbsp;лайнер
           </h3>
           <p>
-            Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст
+            Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
             возможность насладиться видами и&nbsp;природой.
           </p>
         </li>
@@ -121,14 +121,14 @@
           <div class="features-card__icon">
             <picture>
               <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-2.svg">
-              <img src="img/svg/features-icon-2.svg" alt="Иконка для системы все включено.">
+              <img src="img/svg/features-icon-2.svg" width="38" height="21" alt="Иконка для системы все включено.">
             </picture>
           </div>
           <h3 class="section-subtitle">
             Система все&nbsp;включено&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </h3>
           <p>
-            Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас
+            Все наши круизы работают<br> по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас
             24&nbsp;часа.
           </p>
         </li>
@@ -136,14 +136,14 @@
           <div class="features-card__icon">
             <picture>
               <source media="(max-width: 1365px)" srcset="img/svg/features-icon-min-3.svg">
-              <img src="img/svg/features-icon-3.svg" alt="Иконка для туров Zodiac.">
+              <img src="img/svg/features-icon-3.svg" width="42" height="15" alt="Иконка для туров Zodiac.">
             </picture>
           </div>
           <h3 class="section-subtitle">
             Экскурсионные туры&nbsp;на&nbsp;Zodiac
           </h3>
           <p>
-            Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках&nbsp;типа Zodiac в&nbsp;сопровождении<br>
+            Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br> <span>на оборудованных</span> лодках <span>типа<br> Zodiac</span> в&nbsp;сопровождении<br>
             опытных экскурсоводов.
           </p>
         </li>
@@ -568,7 +568,7 @@
       <div class="booking__description">
         <h2 class="section-title">Раннее бронирование</h2>
         <p>
-          Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%
+          Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда<br> и сэкономьте до 50%
         </p>
       </div>
       <form class="booking-form booking__form" action="get">
@@ -578,16 +578,16 @@
         <label class="visually-hidden" for="name">Введите Ваше имя</label>
         <input type="text" id="name" name="tourist-name" placeholder="Имя" required>
         <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-        <input type="tel" id="phone" name="tourist-phone" placeholder="Телефон" required>
+        <input type="tel" id="phone" name="tourist-phone" placeholder="Телефон" required pattern="([+]|[0-9])+[0-9]">
         <label class="visually-hidden" for="email">Введите Вашу электронную почту</label>
         <input type="email" id="email" name="tourist-email" placeholder="Email" required>
-
-        <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>
-        <label for="agreement">
-          Я согласен на обработку моих&nbsp;персональных данных
-        </label>
-
-        <button class="booking-form__button btn" type="submit">Оставить заявку</button>
+        <div class="booking-form__checkbox-wrapper">
+          <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>
+          <label for="agreement">
+            Я согласен на обработку моих&nbsp;персональных данных
+          </label>
+        </div>
+        <input class="btn" type="submit" value="Оставить заявку">
       </form>
 
     </section>
@@ -612,7 +612,7 @@
                   srcset="./img/map-nojs-desktop.jpg 1x, ./img/map-nojs-desktop@2x.jpg 2x">
           <source media="(max-width: 768px)" srcset="./img/map-nojs-tablet.jpg 1x, ./img/map-nojs-tablet@2x.jpg 2x">
           <source media="(max-width: 768px)" srcset="./img/map-nojs-tablet.jpg 1x, ./img/map-nojs-tablet@2x.jpg 2x">
-          <img src="./img/map-nojs-mobile.jpg" srcset="./img/map-nojs-mobile@2x.jpg 2x" alt="Как нас найти.">
+          <img src="./img/map-nojs-desktop.jpg" srcset="./img/map-nojs-desktop@2x.jpg 2x" alt="Как нас найти.">
         </picture>
       </div>
       <div class="contacts__wrapper">
@@ -692,7 +692,7 @@
 </div>
 
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"
   defer
 ></script>
 <script src="js/vendor.min.js"></script>

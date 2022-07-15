@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {initialMap, menuOpen, scrollSmooth} from './vendor';
+import {initialMap, menuOpen, addScrollSmooth} from './vendor';
 
 // ---------------------------------
 
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initialMap();
-  scrollSmooth();
+  addScrollSmooth();
 
   // Modules
   // ---------------------------------

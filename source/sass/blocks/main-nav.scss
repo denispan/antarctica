@@ -9,7 +9,7 @@
     &--nojs,
     &--menu-opened {
       flex-direction: column;
-      padding-top: 50px;
+      padding-top: 56px;
       background-color: $color-alice-blue;
       position: relative;
 
@@ -20,8 +20,8 @@
         height: 22px;
         background: url("../img/svg/logo-menu-opened.svg");
         background-repeat: no-repeat;
-        left: 15px;
-        top: 15px;
+        left: 0;
+        top: 0;
       }
     }
   }
@@ -36,6 +36,7 @@
 
   & a {
     display: inline-block;
+    vertical-align: middle;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -51,7 +52,7 @@
       font-size: 18px;
       line-height: 22px;
       color: $color-tangaroa;
-      padding: 9px 0;
+      padding: 9px 9px;
     }
   }
 }

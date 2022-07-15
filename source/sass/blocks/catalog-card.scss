@@ -65,6 +65,7 @@
 
 .catalog-card__image-wrapper {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   grid-area: card-area;
 
@@ -107,4 +108,3 @@
     color: $color-alice-blue;
   }
 }
-

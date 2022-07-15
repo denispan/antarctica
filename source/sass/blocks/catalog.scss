@@ -30,11 +30,11 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
 
-  @include vp-1279 {
+  @include vp-1365 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     grid-template-columns: repeat(2, 1fr);
   }
 

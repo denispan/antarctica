@@ -1,4 +1,4 @@
-function scrollSmooth() {
+function addScrollSmooth() {
 // собираем все якоря; устанавливаем время анимации и количество кадров
   const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
   const animationTime = 300;
@@ -34,4 +34,4 @@ function scrollSmooth() {
   });
 }
 
-export {scrollSmooth};
+export {addScrollSmooth};

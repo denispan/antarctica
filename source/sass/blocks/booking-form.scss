@@ -1,7 +1,7 @@
 .booking-form {
   display: flex;
   flex-direction: column;
-  padding: 44px 50px 50px;
+  padding: 44px 50px 49px;
   margin-left: 117px;
   margin-right: 60px;
   background-color: $color-tangaroa;
@@ -28,7 +28,7 @@
     }
   }
 
-  & input:not([type="checkbox"]) {
+  & input {
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -45,19 +45,20 @@
 
   & input[type="checkbox"] + label {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
     color: $color-alice-blue;
     margin-top: 3px;
-    margin-bottom: 32px;
     padding-left: 23px;
 
     @include vp-767 {
-      text-align: start;
       padding-left: 27px;
-      margin-bottom: 27px;
-      margin-top: -3px;
+      margin: 0 auto 10px 0;
+      text-align: start;
+      line-height: 11px;
     }
 
     &::before {
@@ -69,6 +70,11 @@
       width: 18px;
       height: 18px;
       background-color: $color-alice-blue;
+
+      @include vp-767 {
+        top: 0;
+        transform: translateY(0);
+      }
     }
   }
 
@@ -82,12 +88,28 @@
     height: 18px;
 
     @include vp-767 {
-      left: 4px;
-      top: 8px;
+      left: 3px;
+      top: 5px;
     }
+  }
+
+  & input[type="submit"] {
+    padding: 11px 15px;
+    margin: 0;
   }
 }
 
-.booking-form__button {
-  padding: 11px 15px;
+.booking-form__checkbox-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+
+  & input {
+    top: 10px;
+    left: 10px;
+  }
+
+  @include vp-767 {
+    margin-right: auto;
+    margin-bottom: 18px;
+  }
 }
