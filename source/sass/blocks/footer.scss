@@ -38,6 +38,7 @@
 
   @include vp-767 {
     margin-left: 0;
+    margin-bottom: 5px;
   }
 
   & a {
@@ -52,7 +53,7 @@
     @include vp-767 {
       color: $color-alice-blue;
       font-size: 12px;
-      line-height: 15px;
+      line-height: 14px;
       padding-left: 0;
     }
   }
@@ -78,6 +79,7 @@
 
 .footer__logo {
   @include vp-767 {
+    display: block;
     margin-right: auto;
     margin-bottom: 18px;
   }

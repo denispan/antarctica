@@ -1,6 +1,3 @@
-// Swiper 7.4.1
-// import './vendor/swiper';
-
 function initialMap() {
   const mapContainer = document.querySelector('.contacts__map-container');
   mapContainer.classList.remove('contacts__map-container--nojs');

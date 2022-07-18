@@ -1,16 +1,25 @@
 .header {
+  min-height: 650px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "logo nav" "title title";
+  background: $color-endeavour url("../img/header-bg-desktop.jpg") no-repeat;
+  background-size: cover;
 
   @include vp-1365 {
+    min-height: 638px;
     grid-template-columns: 1fr 6fr;
+    background: $color-endeavour url("../img/header-bg-tablet.jpg") no-repeat;
+    background-size: cover;
   }
 
   @include vp-767 {
+    min-height: 500px;
     grid-template-columns: 1fr 3fr;
+    background: $color-endeavour url("../img/header-bg-mobile.jpg") no-repeat;
+    background-size: cover;
 
     &--nojs {
       display: flex;

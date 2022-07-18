@@ -1,25 +1,23 @@
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 113px;
+  padding-bottom: 121px;
 
   @include vp-1365 {
-    padding-bottom: 122px;
+    padding-bottom: 99px;
   }
 
   @include vp-767 {
     grid-template-columns: none;
     grid-template-rows: min-content min-content;
-    padding: 58px 15px 68px;
+    padding: 58px 15px 65px;
   }
 }
 
 .contacts__map-container {
+  width: 560px;
+  height: 306px;
   margin-right: 20px;
-
-  @include vp-767 {
-    grid-row: 2 / 3;
-  }
 
   & img {
     display: none;
@@ -31,6 +29,17 @@
 
   &--nojs .map-canvas {
     display: none;
+  }
+
+  @include vp-1365 {
+    width: 324px;
+    height: 335px;
+    margin-right: 15px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 316px;
   }
 }
 
@@ -55,7 +64,7 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  margin: 9px 0 33px 0;
+  margin: 14px 0 33px 0;
 
   @include vp-1365 {
     margin-top: 66px;
