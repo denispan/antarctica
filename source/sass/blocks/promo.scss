@@ -57,12 +57,29 @@
 .promo__image {
   margin-left: auto;
 
+  & img,
+  & picture {
+    object-fit: cover;
+  }
+
   @include vp-1365 {
     margin-top: 9px;
     margin-left: 15px;
+
+    & img,
+    & picture {
+      min-width: 324px;
+      min-height: 264px;
+    }
   }
 
   @include vp-767 {
     margin: 0 auto;
+
+    & img,
+    & picture {
+      min-width: 290px;
+      min-height: 186px;
+    }
   }
 }
