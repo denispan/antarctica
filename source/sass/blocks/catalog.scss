@@ -31,8 +31,8 @@
   row-gap: 30px;
 
   @include vp-1279 {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
