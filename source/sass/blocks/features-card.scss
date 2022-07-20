@@ -1,5 +1,5 @@
 .features-card {
-  padding: 30px 21px 23px 30px;
+  padding: 30px 21px 25px 30px;
   margin: 0;
   background-color: $color-alice-blue;
 
@@ -7,17 +7,9 @@
     padding: 25px 16px 20px 20px;
   }
 
-  & img {
-    margin-bottom: 18px;
-  }
-
   & h3 {
     line-height: 25px;
-    margin-bottom: 13px;
-
-    @include vp-1365 {
-      margin-bottom: 9px;
-    }
+    margin-bottom: 9px;
   }
 
   & p {
@@ -30,22 +22,33 @@
 }
 
 .features-card__icon {
-  min-height: 50px;
+  position: relative;
+  min-height: 52px;
+
+  &--allincluse img {
+    position: absolute;
+    top: 5px;
+  }
+
+  &--board img {
+    position: absolute;
+    top: 8px;
+  }
 
   @include vp-1365 {
     min-height: 46px;
 
-    &--ship {
+    &--ship img {
       width: 21px;
       height: 26px;
     }
 
-    &--allincluse {
+    &--allincluse img {
       width: 33px;
       height: 19px;
     }
 
-    &--board {
+    &--board img {
       width: 38px;
       height: 13px;
     }
