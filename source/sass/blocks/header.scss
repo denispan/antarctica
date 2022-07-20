@@ -2,7 +2,7 @@
   min-height: 650px;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "logo nav" "title title";
   background: $color-endeavour url("../img/header-bg-desktop.jpg") no-repeat;
@@ -10,7 +10,7 @@
   background-position: bottom;
   box-shadow: 0 4px 4px $color-black-transparent;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 638px;
     grid-template-columns: 1fr 6fr;
     background: $color-endeavour url("../img/header-bg-tablet.jpg") no-repeat;
@@ -79,7 +79,7 @@
   margin-top: 35px;
   margin-left: 103px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 30px;
     margin-left: 45px;
   }
@@ -94,7 +94,7 @@
   grid-area: nav;
   margin: 35px 90px 25px auto;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin: 22px 45px 20px auto;
 
     & .main-nav__item {
@@ -134,7 +134,7 @@
   margin: 53px 28px 25px 198px;
   padding: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin: 55px 28px 25px 45px;
   }
 
@@ -149,7 +149,7 @@
     line-height: 66px;
     text-shadow: $color-black-transparent 0 4px 4px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       font-size: 50px;
       line-height: 61px;
       text-shadow: none;
@@ -166,7 +166,7 @@
     line-height: 24px;
     margin: 0;
 
-    @include vp-1365 {
+    @include vp-1023 {
       font-size: 18px;
       line-height: 22px;
     }

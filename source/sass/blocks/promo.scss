@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   min-width: 541px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-width: 464px;
     padding-top: 91px;
     padding-bottom: 92px;
@@ -19,15 +19,24 @@
 }
 
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+
+  @include vp-1023 {
+    padding-right: 10px;
+  }
+
   @include vp-767 {
     margin: 0 auto 33px;
+    padding-right: 0;
   }
 
   & h2 {
-    margin: 56px 10px 25px 0;
+    margin: auto 10px 25px 0;
     text-align: start;
 
-    @include vp-1365 {
+    @include vp-1023 {
       max-width: 205px;
       margin: 0 10px 15px 0;
       line-height: 37px;
@@ -41,10 +50,10 @@
   }
 
   & p {
-    margin: 0;
+    margin: 0 0 auto;
     max-width: 512px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       max-width: 324px;
     }
 
@@ -55,6 +64,8 @@
 }
 
 .promo__image {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 
   & img,
@@ -62,7 +73,7 @@
     object-fit: cover;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 9px;
     margin-left: 15px;
 
