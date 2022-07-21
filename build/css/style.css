@@ -1327,6 +1327,16 @@ button,
   }
 }
 
+@media (max-width: 1365px) {
+  .footer {
+    padding: 50px 65px;
+  }
+
+  .map-canvas iframe {
+    min-height: 335px;
+  }
+}
+
 @media (max-width: 1279px) {
   .catalog__list {
     -ms-grid-columns: (1fr)[3];
@@ -1561,7 +1571,7 @@ button,
   }
 
   .contacts {
-    padding-bottom: 122px;
+    padding-bottom: 94px;
   }
 
   .contacts__map-container {
@@ -1962,7 +1972,7 @@ button,
     -ms-grid-rows: min-content min-content;
     grid-template-rows: -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content;
-    padding: 58px 15px 68px;
+    padding: 58px 15px;
   }
 
   .contacts__map-container--nojs img,
@@ -1982,5 +1992,9 @@ button,
   .contacts__caption {
     margin-top: 0;
     margin-bottom: 27px;
+  }
+
+  .map-canvas iframe {
+    min-height: 316px;
   }
 }

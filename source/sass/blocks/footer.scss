@@ -15,6 +15,10 @@
     }
   }
 
+  @include vp-1365 {
+    padding: 50px 65px;
+  }
+
   @include vp-1023 {
     min-height: 122px;
   }

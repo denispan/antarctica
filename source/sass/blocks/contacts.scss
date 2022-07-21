@@ -4,13 +4,13 @@
   padding-bottom: 113px;
 
   @include vp-1023 {
-    padding-bottom: 122px;
+    padding-bottom: 94px;
   }
 
   @include vp-767 {
     grid-template-columns: none;
     grid-template-rows: min-content min-content;
-    padding: 58px 15px 68px;
+    padding: 58px 15px;
   }
 }
 
