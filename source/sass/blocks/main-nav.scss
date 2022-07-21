@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: auto;
 
   @include vp-767 {
+    &--nojs {
+      margin: 0 -15px;
+    }
+
     &--nojs,
     &--menu-opened {
       flex-direction: column;
@@ -20,8 +25,8 @@
         height: 22px;
         background: url("../img/svg/logo-menu-opened.svg");
         background-repeat: no-repeat;
-        left: 0;
-        top: 0;
+        left: 15px;
+        top: 15px;
       }
     }
   }
@@ -29,6 +34,19 @@
 
 .main-nav__item {
   display: block;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include vp-1023 {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   @include vp-767 {
     background-color: $color-alice-blue;
@@ -40,7 +58,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 16px;
+    padding: 10px 0;
+    user-select: none;
 
     @include vp-1023 {
       font-size: 14px;

@@ -658,6 +658,10 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn:disabled {
@@ -682,10 +686,16 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: auto;
 }
 
 .main-nav__item {
   display: block;
+  margin-right: 34px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
 }
 
 .main-nav__item a {
@@ -694,7 +704,16 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 16px;
+  padding: 10px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo {
+  display: inline-block;
+  cursor: pointer;
 }
 
 .features-card {
@@ -736,7 +755,8 @@ button,
   display: grid;
   grid-template-areas: "card-area";
   width: 260px;
-  min-height: 386px;
+  height: 386px;
+  overflow: auto;
 }
 
 .catalog-card h3 {
@@ -772,6 +792,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .catalog-card__image-wrapper {
@@ -797,12 +821,6 @@ button,
 .catalog-card__description-wrapper {
   display: none;
   height: 100%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding: 0 25px 10px;
 }
 
@@ -893,14 +911,13 @@ button,
   -ms-grid-column: 1;
   grid-area: logo;
   margin-top: 35px;
-  margin-left: 103px;
 }
 
 .header__nav {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: nav;
-  margin: 35px 90px 25px auto;
+  margin: 35px 0 25px auto;
 }
 
 .header__nav a {
@@ -917,7 +934,7 @@ button,
   -ms-grid-column-span: 2;
   grid-area: title;
   color: #f9fbfd;
-  margin: 53px 28px 25px 198px;
+  margin: 53px 28px 25px 95px;
   padding: 0;
 }
 
@@ -1194,21 +1211,31 @@ button,
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
-  margin-top: 3px;
   padding-left: 23px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.booking-form input[type="checkbox"] + label:hover {
+  opacity: 0.9;
 }
 
 .booking-form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: -2px;
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
+}
+
+.booking-form input[type="checkbox"]:focus + label {
+  outline: 2px solid #000000;
+  border-radius: 2px;
 }
 
 .booking-form input[type="checkbox"]:checked + label::after {
@@ -1228,7 +1255,8 @@ button,
 
 .booking-form__checkbox-wrapper {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  margin-top: 3px;
 }
 
 .booking-form__checkbox-wrapper input {
@@ -1333,6 +1361,7 @@ button,
   }
 
   .map-canvas iframe {
+    min-width: 324px;
     min-height: 335px;
   }
 }
@@ -1352,6 +1381,14 @@ button,
   .section-title {
     font-size: 26px;
     line-height: 39px;
+  }
+
+  .main-nav__item {
+    margin-right: 25px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
   }
 
   .main-nav__item a {
@@ -1428,11 +1465,10 @@ button,
 
   .header__logo {
     margin-top: 30px;
-    margin-left: 45px;
   }
 
   .header__nav {
-    margin: 22px 45px 20px auto;
+    margin: 22px 0 20px auto;
   }
 
   .header__nav .main-nav__item {
@@ -1444,7 +1480,7 @@ button,
   }
 
   .header__title-wrapper {
-    margin: 55px 28px 25px 45px;
+    margin: 55px 28px 25px 0;
   }
 
   .header__title-wrapper h1 {
@@ -1500,7 +1536,7 @@ button,
   }
 
   .promo__image {
-    margin-top: 9px;
+    margin-top: 0;
     margin-left: 15px;
   }
 
@@ -1571,11 +1607,11 @@ button,
   }
 
   .contacts {
-    padding-bottom: 94px;
+    padding-bottom: 92px;
   }
 
   .contacts__map-container {
-    margin-right: 0;
+    margin-right: 15px;
   }
 
   .contacts__map-container--nojs img,
@@ -1608,6 +1644,10 @@ button,
     line-height: 36px;
   }
 
+  .main-nav--nojs {
+    margin: 0 -15px;
+  }
+
   .main-nav--nojs,
   .main-nav--menu-opened {
     -webkit-box-orient: vertical;
@@ -1627,8 +1667,8 @@ button,
     height: 22px;
     background: url("../img/svg/logo-menu-opened.svg");
     background-repeat: no-repeat;
-    left: 0;
-    top: 0;
+    left: 15px;
+    top: 15px;
   }
 
   .main-nav__item {
@@ -1720,14 +1760,14 @@ button,
     margin: 0;
     min-width: 285px;
     height: 100vh;
-    right: 0;
+    right: -15px;
     z-index: 1;
     padding: 20px 30px 0 15px;
+    overflow: auto;
   }
 
   .header--nojs .header__title-wrapper {
-    position: absolute;
-    bottom: 150px;
+    margin-top: 70px;
   }
 
   .header--nojs .header__menu-toggle {
@@ -1736,7 +1776,6 @@ button,
 
   .header__logo {
     margin-top: 20px;
-    margin-left: 15px;
   }
 
   .header__nav {
@@ -1752,10 +1791,11 @@ button,
     -ms-grid-column: 2;
     grid-area: nav;
     padding-top: 47px;
+    margin-right: -15px;
   }
 
   .header__title-wrapper {
-    margin: 10px 0 0 15px;
+    margin: 10px 0 0;
   }
 
   .header__title-wrapper h1 {
@@ -1963,6 +2003,7 @@ button,
   .booking-form__checkbox-wrapper {
     margin-right: auto;
     margin-bottom: 18px;
+    margin-top: 0;
   }
 
   .contacts {
@@ -1996,5 +2037,6 @@ button,
 
   .map-canvas iframe {
     min-height: 316px;
+    min-width: 290px;
   }
 }

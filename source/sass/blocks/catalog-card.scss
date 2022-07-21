@@ -2,7 +2,8 @@
   display: grid;
   grid-template-areas: "card-area";
   width: 260px;
-  min-height: 386px;
+  height: 386px;
+  overflow: auto;
 
   & h3 {
     grid-area: card-area;
@@ -51,6 +52,7 @@
 
     & .catalog-card__description-wrapper {
       display: flex;
+      flex-direction: column;
 
       @include vp-1023 {
         padding: 0 35px;
@@ -95,8 +97,6 @@
 .catalog-card__description-wrapper {
   display: none;
   height: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
   padding: 0 25px 10px;
 }
 

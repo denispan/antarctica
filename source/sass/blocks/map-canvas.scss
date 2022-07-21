@@ -7,11 +7,13 @@
     border: none;
 
     @include vp-1365 {
+      min-width: 324px;
       min-height: 335px;
     }
 
     @include vp-767 {
       min-height: 316px;
+      min-width: 290px;
     }
   }
 }
