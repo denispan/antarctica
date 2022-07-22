@@ -97,6 +97,10 @@
     top: 2px;
   }
 
+  &--phone:hover {
+    opacity: 0.8;
+  }
+
   &--address::before {
     width: 18px;
     height: 22px;

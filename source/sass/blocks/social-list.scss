@@ -22,5 +22,9 @@
   & a {
     display: inline-block;
     vertical-align: middle;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

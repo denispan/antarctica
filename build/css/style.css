@@ -711,6 +711,10 @@ button,
   user-select: none;
 }
 
+.main-nav__item a:hover {
+  opacity: 0.8;
+}
+
 .logo {
   display: inline-block;
   cursor: pointer;
@@ -1028,6 +1032,10 @@ button,
   vertical-align: middle;
 }
 
+.social-list__item a:hover {
+  opacity: 0.8;
+}
+
 .promo {
   display: -ms-grid;
   display: grid;
@@ -1220,7 +1228,7 @@ button,
 }
 
 .booking-form input[type="checkbox"] + label:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .booking-form input[type="checkbox"] + label::before {
@@ -1317,6 +1325,10 @@ button,
   position: absolute;
   left: -28px;
   top: 2px;
+}
+
+.contacts__text--phone:hover {
+  opacity: 0.8;
 }
 
 .contacts__text--address::before {
