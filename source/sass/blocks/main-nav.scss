@@ -7,10 +7,6 @@
   overflow: auto;
 
   @include vp-767 {
-    &--nojs {
-      margin: 0 -15px;
-    }
-
     &--nojs,
     &--menu-opened {
       flex-direction: column;
@@ -29,19 +25,30 @@
         top: 0;
       }
     }
+
+    &--nojs {
+      margin: 0 -15px;
+
+      &::before {
+        left: 15px;
+        top: 15px;
+      }
+    }
   }
 }
 
 .main-nav__item {
   display: block;
-  margin-right: 34px;
+  margin-right: 29px;
+  padding: 2px;
 
   &:last-child {
     margin-right: 0;
   }
 
   @include vp-1023 {
-    margin-right: 25px;
+    margin-right: 18px;
+    margin-top: -2px;
 
     &:last-child {
       margin-right: 0;

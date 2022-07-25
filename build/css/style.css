@@ -691,7 +691,8 @@ button,
 
 .main-nav__item {
   display: block;
-  margin-right: 34px;
+  margin-right: 29px;
+  padding: 2px;
 }
 
 .main-nav__item:last-child {
@@ -1002,7 +1003,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .footer__container .social-list {
@@ -1020,7 +1021,7 @@ button,
 }
 
 .footer__nav .main-nav__item {
-  margin-right: 13px;
+  margin-right: 8px;
 }
 
 .footer__logo {
@@ -1425,7 +1426,8 @@ button,
   }
 
   .main-nav__item {
-    margin-right: 25px;
+    margin-right: 18px;
+    margin-top: -2px;
   }
 
   .main-nav__item:last-child {
@@ -1518,7 +1520,7 @@ button,
   }
 
   .header__nav .main-nav__item {
-    margin-right: 24px;
+    margin-right: 18px;
   }
 
   .header__nav .main-nav__item:last-child {
@@ -1540,8 +1542,12 @@ button,
     line-height: 22px;
   }
 
+  .footer__container .social-list {
+    margin-top: 50px;
+  }
+
   .footer__container {
-    min-height: 122px;
+    min-height: 119px;
   }
 
   .footer__nav {
@@ -1554,7 +1560,11 @@ button,
   }
 
   .footer__nav .main-nav__item {
-    margin-right: 23px;
+    margin-right: 18px;
+  }
+
+  .footer__logo {
+    margin-top: 50px;
   }
 
   .social-list__item {
@@ -1656,7 +1666,7 @@ button,
   }
 
   .contacts {
-    padding-bottom: 92px;
+    padding-bottom: 94px;
   }
 
   .contacts__map-container {
@@ -1693,10 +1703,6 @@ button,
     line-height: 36px;
   }
 
-  .main-nav--nojs {
-    margin: 0 -15px;
-  }
-
   .main-nav--nojs,
   .main-nav--menu-opened {
     -webkit-box-orient: vertical;
@@ -1718,6 +1724,15 @@ button,
     background-repeat: no-repeat;
     left: 0;
     top: 0;
+  }
+
+  .main-nav--nojs {
+    margin: 0 -15px;
+  }
+
+  .main-nav--nojs::before {
+    left: 15px;
+    top: 15px;
   }
 
   .main-nav__item {
@@ -1837,7 +1852,7 @@ button,
   }
 
   .header__nav .main-nav__item {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .header__menu-toggle {
@@ -1905,10 +1920,19 @@ button,
     background-color: #011c40;
   }
 
+  .footer__nav .main-nav__item:first-child {
+    padding-top: 4px;
+  }
+
+  .footer__nav .main-nav__item a {
+    padding: 8px 0;
+  }
+
   .footer__logo {
     display: block;
     margin-right: auto;
     margin-bottom: 18px;
+    margin-top: 0;
   }
 
   .social-list {
@@ -1994,6 +2018,15 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 0;
+  }
+
+  .catalog__item {
+    margin-bottom: 30px;
+  }
+
+  .catalog__item:last-child {
+    margin-bottom: 0;
   }
 
   .booking {

@@ -41,9 +41,18 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
   }
 }
 
 .catalog__item {
   margin: 0 auto;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
