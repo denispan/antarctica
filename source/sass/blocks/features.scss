@@ -1,6 +1,9 @@
 .features {
   background: $color-tory-blue url("../img/features-bg-desktop.jpg") no-repeat;
   background-size: cover;
+}
+
+.features__container {
   padding-top: 110px;
 
   & h2 {

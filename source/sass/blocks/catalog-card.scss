@@ -3,7 +3,6 @@
   grid-template-areas: "card-area";
   width: 260px;
   height: 386px;
-  overflow: auto;
 
   & h3 {
     grid-area: card-area;
@@ -29,7 +28,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     display: flex;
     flex-direction: column;
     background-color: $color-tangaroa;
@@ -98,6 +98,7 @@
   display: none;
   height: 100%;
   padding: 0 25px 10px;
+  overflow: auto;
 }
 
 .catalog-card__description {

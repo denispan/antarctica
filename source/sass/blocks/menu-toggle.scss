@@ -13,8 +13,10 @@
   z-index: 1;
 
   &--opened {
+    margin-top: 5px;
+    padding: 10px;
     background-image: url("../img/svg/toggle-menu-opened.svg");
-    background-position: center;
+    background-position: top 20px right 15px;
   }
 
   @include vp-767 {

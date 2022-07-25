@@ -15,44 +15,46 @@
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-<div class="wrapper">
-  <header class="header container header--nojs">
-    <div class="header__logo">
-      <a class="logo">
-        <img src="img/svg/logo_desktop.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
-      </a>
+  <header class="header">
+    <div class="container header__container header__container--nojs">
+      <div class="header__logo">
+        <a class="logo">
+          <img src="img/svg/logo_desktop.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="main-nav main-nav--nojs">
+          <li class="main-nav__item">
+            <a href="#features">
+              Преимущества
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html">
+              Направления
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#catalog">
+              Ближайшие круизы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__menu-toggle menu-toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <section class="header__title-wrapper">
+        <h1>Круизы в&nbsp;Антарктику</h1>
+        <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+      </section>
     </div>
-    <nav class="header__nav">
-      <ul class="main-nav main-nav--nojs">
-        <li class="main-nav__item">
-          <a href="#features">
-            Преимущества
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="index.html">
-            Направления
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#catalog">
-            Ближайшие круизы
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#contacts">
-            Контакты
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <button class="header__menu-toggle menu-toggle" type="button">
-      <span class="visually-hidden">Открыть/закрыть меню</span>
-    </button>
-    <section class="header__title-wrapper">
-      <h1>Круизы в&nbsp;Антарктику</h1>
-      <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
-    </section>
+
   </header>
   <main class="page__main main">
     <section class="section promo container" id="promo">
@@ -76,55 +78,57 @@
       </div>
 
     </section>
-    <section class="section features container" id="features">
-      <h2 class="section-title">
-        Преимущества
-      </h2>
-      <ul class="features__list list-reset">
-        <li class="features-card features__card">
-          <div class="features-card__icon features-card__icon--ship">
+    <section class="features" id="features">
+      <div class="section container features__container">
+        <h2 class="section-title">
+          Преимущества
+        </h2>
+        <ul class="features__list list-reset">
+          <li class="features-card features__card">
+            <div class="features-card__icon features-card__icon--ship">
               <img src="img/svg/features-icon-1.svg" width="27" height="32" aria-hidden="true" alt="">
-          </div>
-          <h3 class="section-subtitle">
-            Небольшой круизный&nbsp;лайнер
-          </h3>
-          <p>
-            Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
-            возможность насладиться видами и&nbsp;природой.
-          </p>
-        </li>
-        <li class="features-card features__card">
-          <div class="features-card__icon features-card__icon--allincluse">
-            <img src="img/svg/features-icon-2.svg" width="38" height="21" aria-hidden="true" alt="">
-          </div>
-          <h3 class="section-subtitle">
-            Система все&nbsp;включено&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </h3>
-          <p>
-            Все наши круизы работают<br> по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас
-            24&nbsp;часа.
-          </p>
-        </li>
-        <li class="features-card features__card">
-          <div class="features-card__icon features-card__icon--board">
-            <img src="img/svg/features-icon-3.svg" width="42" height="15" aria-hidden="true" alt="">
-          </div>
-          <h3 class="section-subtitle">
-            Экскурсионные туры&nbsp;на&nbsp;Zodiac
-          </h3>
-          <p>
-            Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br> <span>на оборудованных</span> лодках <span>типа<br> Zodiac</span> в&nbsp;сопровождении<br>
-            опытных экскурсоводов.
-          </p>
-        </li>
-      </ul>
+            </div>
+            <h3 class="section-subtitle">
+              Небольшой круизный&nbsp;лайнер
+            </h3>
+            <p>
+              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
+              возможность насладиться видами и&nbsp;природой.
+            </p>
+          </li>
+          <li class="features-card features__card">
+            <div class="features-card__icon features-card__icon--allincluse">
+              <img src="img/svg/features-icon-2.svg" width="38" height="21" aria-hidden="true" alt="">
+            </div>
+            <h3 class="section-subtitle">
+              Система все&nbsp;включено&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </h3>
+            <p>
+              Все наши круизы работают<br> по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас
+              24&nbsp;часа.
+            </p>
+          </li>
+          <li class="features-card features__card">
+            <div class="features-card__icon features-card__icon--board">
+              <img src="img/svg/features-icon-3.svg" width="42" height="15" aria-hidden="true" alt="">
+            </div>
+            <h3 class="section-subtitle">
+              Экскурсионные туры&nbsp;на&nbsp;Zodiac
+            </h3>
+            <p>
+              Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br> <span>на оборудованных</span> лодках <span>типа<br> Zodiac</span> в&nbsp;сопровождении<br>
+              опытных экскурсоводов.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="catalog container" id="catalog">
       <h2 class="section-title">
         Ближайшие круизы
       </h2>
       <ul class="catalog__list list-reset">
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -167,7 +171,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -210,7 +214,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -253,7 +257,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -296,7 +300,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -339,7 +343,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -382,7 +386,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -425,7 +429,7 @@
             </a>
           </div>
         </li>
-        <li class="catalog__item catalog-card">
+        <li class="catalog__item catalog-card" tabindex="0">
           <div class="catalog-card__image-wrapper">
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
@@ -470,32 +474,33 @@
         </li>
       </ul>
     </section>
-    <section class="booking container">
-      <div class="booking__description">
-        <h2 class="section-title">Раннее бронирование</h2>
-        <p>
-          Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда<br> и сэкономьте до 50%
-        </p>
-      </div>
-      <form class="booking-form booking__form" action="get">
-        <p>
-          Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
-        </p>
-        <label class="visually-hidden" for="name">Введите Ваше имя</label>
-        <input type="text" id="name" name="tourist-name" placeholder="Имя" required>
-        <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-        <input type="tel" id="phone" name="tourist-phone" placeholder="Телефон" required pattern="([+]|[0-9])+[0-9]">
-        <label class="visually-hidden" for="email">Введите Вашу электронную почту</label>
-        <input type="email" id="email" name="tourist-email" placeholder="Email" required>
-        <div class="booking-form__checkbox-wrapper">
-          <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>
-          <label for="agreement">
-            Я согласен на&nbsp;обработку моих&nbsp;персональных данных
-          </label>
+    <section class="booking">
+      <div class="container booking__container">
+        <div class="booking__description">
+          <h2 class="section-title">Раннее бронирование</h2>
+          <p>
+            Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда<br> и сэкономьте до 50%
+          </p>
         </div>
-        <input class="btn" type="submit" value="Оставить заявку">
-      </form>
-
+        <form class="booking-form booking__form" action="https://echo.htmlacademy.ru/" method="get">
+          <p>
+            Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
+          </p>
+          <label class="visually-hidden" for="name">Введите Ваше имя</label>
+          <input type="text" id="name" name="tourist-name" placeholder="Имя" required>
+          <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+          <input type="tel" id="phone" name="tourist-phone" placeholder="Телефон" required pattern="([+]|[0-9])+[0-9]">
+          <label class="visually-hidden" for="email">Введите Вашу электронную почту</label>
+          <input type="email" id="email" name="tourist-email" placeholder="Email" required>
+          <div class="booking-form__checkbox-wrapper">
+            <input class="visually-hidden" type="checkbox" id="agreement" name="tourist-agreement" required>
+            <label for="agreement">
+              Я согласен на&nbsp;обработку моих&nbsp;персональных данных
+            </label>
+          </div>
+          <input class="btn" type="submit" value="Оставить заявку">
+        </form>
+      </div>
     </section>
     <section class="section contacts container" id="contacts">
       <h2 class="visually-hidden">
@@ -529,59 +534,60 @@
       </div>
     </section>
   </main>
-  <footer class="footer container">
-    <a class="logo footer__logo">
-      <img src="img/svg/logo_desktop.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
-    </a>
-    <nav class="footer__nav">
-      <ul class="main-nav">
-        <li class="main-nav__item">
-          <a href="#features">
-            Преимущества
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="logo footer__logo">
+        <img src="img/svg/logo_desktop.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
+      </a>
+      <nav class="footer__nav">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a href="#features">
+              Преимущества
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html">
+              Направления
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#catalog">
+              Ближайшие круизы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-list footer__social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="Facebook">
+            <svg class="social-list__icon" width="11" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#social-fb"></use>
+            </svg>
           </a>
         </li>
-        <li class="main-nav__item">
-          <a href="index.html">
-            Направления
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="Instagram">
+            <svg class="social-list__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#social-ig"></use>
+            </svg>
           </a>
         </li>
-        <li class="main-nav__item">
-          <a href="#catalog">
-            Ближайшие круизы
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#contacts">
-            Контакты
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="Twitter">
+            <svg class="social-list__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#social-tw"></use>
+            </svg>
           </a>
         </li>
       </ul>
-    </nav>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="Facebook">
-          <svg class="social-list__icon" width="11" height="20" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#social-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="Instagram">
-          <svg class="social-list__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#social-ig"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="Twitter">
-          <svg class="social-list__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#social-tw"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </footer>
-</div>
 
 <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"

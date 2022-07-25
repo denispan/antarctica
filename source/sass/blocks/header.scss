@@ -1,18 +1,10 @@
 .header {
-  min-height: 650px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "logo nav" "title title";
   background: $color-endeavour url("../img/header-bg-desktop.jpg") no-repeat;
   background-size: cover;
   background-position: bottom;
   box-shadow: 0 4px 4px $color-black-transparent;
 
   @include vp-1023 {
-    min-height: 638px;
-    grid-template-columns: 1fr 6fr;
     background: $color-endeavour url("../img/header-bg-tablet.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -20,11 +12,28 @@
   }
 
   @include vp-767 {
-    min-height: 500px;
-    grid-template-columns: 1fr 3fr;
     background: $color-endeavour url("../img/header-bg-mobile.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
+  }
+}
+
+.header__container {
+  min-height: 650px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "logo nav" "title title";
+
+  @include vp-1023 {
+    min-height: 638px;
+    grid-template-columns: 1fr 6fr;
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+    grid-template-columns: 1fr 3fr;
 
     &--nojs {
       display: flex;
